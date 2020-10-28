@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên:"
+            android:textColor="@color/colorYellow"
+            android:id="@+id/txt_name"
+            android:layout_margin="10sp"
+            android:textSize="30sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_margin="20sp"
+            android:id="@+id/edit_name"
+            android:layout_below="@id/txt_name"
+            android:background="@android:color/white"/>
+        <Button
+            android:layout_below="@id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/btn_close"
+            android:layout_toLeftOf="@id/btn_done"
+            android:layout_marginRight="30sp"
+            android:background="@color/colorAccent"
+            android:text="Hủy"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/btn_done"
+            android:layout_below="@+id/edit_name"
+            android:layout_alignRight="@id/edit_name"
+            android:background="@color/colorPurple"
+            android:text="Xong"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textView = (TextView) findViewById(R.id.txt_Count_Time);
-        editText = (EditText) findViewById(R.id.edit_Time);
-        btnStart = (Button) findViewById(R.id.btn_Start);
+        textView =findViewById(R.id.txt_Count_Time);
+        editText =findViewById(R.id.edit_Time);
+        btnStart =findViewById(R.id.btn_Start);
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,25 +51,25 @@ public class MainActivity extends AppCompatActivity {
         new Thread() {
 
             public void run() {
-// 0 là trạng bắt đầu
+                // 0 là trạng bắt đầu
                 handler.obtainMessage(0).sendToTarget();
                 while (true) {
                     try {
                         if (num == 0) {
-// 2 là trạng thái kết thúc
+                            // 2 là trạng thái kết thúc
                             handler.obtainMessage(2)
                                     .sendToTarget();
                             return; }
                         Thread.sleep(10);
                         num = num - 1;
-// 1 là trạng thái đang chạy
+                        // 1 là trạng thái đang chạy
                         handler.obtainMessage(1,
                                 num, 0).sendToTarget();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     } } }
-// Dùng start() để chạy ngầm, không làm đơ ứng dụng khi
-// đang xử lý tiến trình bên trong
+        // Dùng start() để chạy ngầm, không làm đơ ứng dụng khi
+        // đang xử lý tiến trình bên trong
         }.start();
     }
 }

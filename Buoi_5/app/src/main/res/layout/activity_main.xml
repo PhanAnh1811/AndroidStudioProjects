@@ -13,17 +13,18 @@
         android:ems="10"
         android:hint="Nhập tên sinh viên"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/edt_student_class"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintHorizontal_bias="0.279"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.565" />
 
     <EditText
         android:id="@+id/edt_student_class"
         android:layout_width="343dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="12dp"
         android:ems="10"
         android:hint="Nhập lớp"
         android:inputType="textPersonName"
@@ -35,25 +36,18 @@
         app:layout_constraintVertical_bias="0.488" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="49dp" />
-
-    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="114dp" />
+        app:layout_constraintGuide_begin="134dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="168dp" />
+        app:layout_constraintGuide_begin="217dp" />
 
     <Button
         android:id="@+id/btn_add"
@@ -76,7 +70,7 @@
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.437" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -87,8 +81,8 @@
 
     <ListView
         android:id="@+id/lv_student"
-        android:layout_width="409dp"
-        android:layout_height="564dp"
+        android:layout_width="407dp"
+        android:layout_height="515dp"
         android:layout_marginEnd="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

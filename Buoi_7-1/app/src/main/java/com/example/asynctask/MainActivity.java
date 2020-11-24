@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.os.AsyncTask;
 import java.util.concurrent.TimeUnit;
+import android.os.AsyncTask;
+import android.os.SystemClock;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv;
@@ -19,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String FORMAT = "%02d:%02d:%02d";
 
-    int seconds , minutes;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
